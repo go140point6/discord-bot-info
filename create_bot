@@ -1,0 +1,32 @@
+Log in with your normal discord user account:
+https://discord.com/developers/applications
+
+New Application
+->give it name
+  Prophet Bot
+  Oracle Bot
+  EXFI Bot
+  (etc.)
+
+Upload the picture for the bot (I will see if i still have these somewhere and put them here for download)
+
+Note the Application ID.  This is part 1 of 2 things I need.
+
+Go to Bot section in the left-hand menu, make sure the Build-A-Bot shows your name you selected (i.e. Prophet Bot) and the picture.
+
+Click "Reset Token" and note down that exact secret token.  This is part 2 of 2 things I need.  Keep them together, each bot will have a unique ID and secret token.
+
+These two buttons need to be toggled "on":
+Presence Intent
+Server Members Intent
+
+Once I update my bot server with your new information, you will need kick (don't ban just kick) the old bot and invite your new one you just created:
+    
+https://discord.com/api/oauth2/authorize?client_id=<thisIsApplicationIDFromAbove>&permissions=335544320&scope=bot
+
+remove the <> so the url looks like this https://discord.com/api/oauth2/authorize?client_id=1077625685985722509&permissions=335544320&scope=bot
+
+Important:  The bot will be added to the bottom of the list of Roles.  You must move the bot at least higher than the two color roles already there (red and green).
+
+If all goes well, I start the bot on my server, he comes online and starts showing the prices as they change.  You only have to do all this once per bot.
+
